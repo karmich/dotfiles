@@ -100,9 +100,12 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-alias tma="tmux attach -t local || tmux new -s local"
+alias gh="history|grep"
+
 alias d="docker"
 alias dc="docker-compose"
-alias gh="history|grep"
-alias tmux="tmux attach -t 0 2> /dev/null || tmux new -s 0"
+
+alias tma="tmux -u attach -t local || tmux -u new -s local"
+alias tmux="tmux -u attach -t local 2> /dev/null || tmux -u new -s local"
+
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
