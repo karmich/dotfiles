@@ -8,7 +8,7 @@ export ZSH="/home/kma/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="agnoster"
+ZSH_THEME="agnoster" #dst
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -106,6 +106,12 @@ alias d="docker"
 alias dc="docker-compose"
 
 alias tma="tmux -u attach -t local || tmux -u new -s local"
-alias tmux="tmux -u attach -t local 2> /dev/null || tmux -u new -s local"
 
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+
+alias tmux="tmux -u attach -t local || tmux -u new -s local"
+
+# if [ "$TMUX" = "" ]
+# then
+# 	tmux -u attach || tmux -u new
+# fi
