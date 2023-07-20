@@ -23,8 +23,3 @@ if [ -d "$HOME/dev/flutter/bin" ] ; then
 fi
 
 export ANDROID_HOME="$HOME/dev/Android/Sdk"
-
-
-# Added by Toolbox App
-export PATH="$PATH:/home/kma/.local/share/JetBrains/Toolbox/scripts"
-
