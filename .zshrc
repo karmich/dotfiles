@@ -105,8 +105,6 @@ alias gh="history|grep"
 alias d="docker"
 alias dc="docker-compose"
 
-alias tma="tmux -u attach -t local || tmux -u new -s local"
-
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
 alias tmux="tmux -u attach -t local || tmux -u new -s local"
