@@ -107,8 +107,6 @@ alias dc="docker-compose"
 
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
-alias tmux="tmux -u attach -t local || tmux -u new -s local"
-
 # if [ "$TMUX" = "" ]
 # then
 # 	tmux -u attach || tmux -u new
