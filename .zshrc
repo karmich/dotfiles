@@ -91,23 +91,7 @@ source $ZSH/oh-my-zsh.sh
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
-# Set personal aliases, overriding those provided by oh-my-zsh libs,
-# plugins, and themes. Aliases can be placed here, though oh-my-zsh
-# users are encouraged to define aliases within the ZSH_CUSTOM folder.
-# For a full list of active aliases, run `alias`.
-#
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
-
-alias gh="history|grep"
-
-alias d="docker"
-alias dc="docker-compose"
-
-alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
-
-# if [ "$TMUX" = "" ]
-# then
-# 	tmux -u attach || tmux -u new
-# fi
+if [ -f ~/.zsh_aliases ]
+then
+    source ~/.zsh_aliases
+fi
