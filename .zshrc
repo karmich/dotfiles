@@ -1,4 +1,5 @@
 # git clone --depth=1 https://gitee.com/romkatv/powerlevel10k.git ~/Repositories/powerlevel10k
+# git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
 
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
