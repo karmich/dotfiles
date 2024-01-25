@@ -23,3 +23,4 @@ if [ -d "$HOME/dev/flutter/bin" ] ; then
 fi
 
 export ANDROID_HOME="$HOME/dev/Android/Sdk"
+export GTK_USE_PORTAL=1
