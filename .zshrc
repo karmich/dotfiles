@@ -1,7 +1,13 @@
+if [ -f ~/.zsh_env ]
+then
+    source ~/.zsh_env
+fi
+
 if [ -f ~/.zsh_aliases ]
 then
     source ~/.zsh_aliases
 fi
+
 
 HISTFILE=~/.zsh_history
 HISTSIZE=1000
@@ -29,3 +35,7 @@ zle -N down-line-or-beginning-search
 bindkey "^[[A" up-line-or-beginning-search # Up
 bindkey "^[[B" down-line-or-beginning-search # Down
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+autoload edit-command-line
+zle -N edit-command-line
+bindkey '^Xe' edit-command-line
