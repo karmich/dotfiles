@@ -38,4 +38,5 @@ source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 autoload edit-command-line
 zle -N edit-command-line
-bindkey '^Xe' edit-command-line
+bindkey '^xe' edit-command-line
+bindkey '^x^e' edit-command-line
