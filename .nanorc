@@ -1,2 +1,23 @@
-#set linenumbers
+set linenumbers
 set tabsize 4
+set autoindent
+set tabstospaces
+#set smooth
+set mouse
+set positionlog
+set rebinddelete
+set softwrap
+set atblanks
+set indicator
+set historylog
+set casesensitive
+set regexp
+set backup
+set backupdir "~/.nano_backups/"
+
+include "/usr/share/nano/*.nanorc"
+
+bind ^Q exit main
+bind ^F whereis all
+bind F2 writeout main
+bind ^S writeout main
